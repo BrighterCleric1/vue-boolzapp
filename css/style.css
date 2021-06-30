@@ -24,7 +24,7 @@
 }
 
 .header{
-    height: 60px;
+    height: 59px;
     background-color: #EDEDED;
 }
 
@@ -42,5 +42,16 @@
     height: 90%;
 }
 
+.main{
+    height: 600px;
+}
 
 
+.sidebar{
+    background-color: #F6F6F6;
+}
+
+.alert{
+    height: 89px;
+    background-color: #9DE1FE;
+}
