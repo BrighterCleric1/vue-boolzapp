@@ -102,6 +102,7 @@
 .chats{
     background-color: #fff;
     overflow-y: scroll;
+    min-height: 320px;
 }
 
 
@@ -114,6 +115,7 @@
     position: relative;
     padding-top: 30px;
     overflow-y: scroll;
+    height: 100%;
 }
 
 
