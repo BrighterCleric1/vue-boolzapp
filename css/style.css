@@ -1,3 +1,4 @@
+
 .header-bg{
     width: 100%;
     background-color: #009688;
@@ -11,6 +12,7 @@
     width: 100%;
     position: relative;
     z-index: -1;
+    overflow-y: hidden;
 }
 
 .header{
@@ -42,7 +44,7 @@
 }
 
 .main{
-    height: 600px;
+    height: calc(100% - 59px);
 }
 
 
@@ -99,6 +101,7 @@
 
 .chats{
     background-color: #fff;
+    overflow-y: scroll;
 }
 
 
@@ -107,9 +110,10 @@
 }
 
 .main-content{
-    height: 100%;
     background-image: url(../img/img/mine.jpg);
     position: relative;
+    padding-top: 30px;
+    overflow-y: scroll;
 }
 
 
@@ -119,6 +123,7 @@
     bottom: 0;
     width: 100%;
     background-color: #F0F0F0;
+    overflow-y: hidden;
 }
 
 #message{
@@ -127,4 +132,33 @@
     padding-left: 20px;
     line-height: 40px;
     border-radius: 12px;
+}
+
+.green{
+    background-color: #DCF8C6;
+    padding: 10px;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.msg-info{
+    font-size: 11px;
+}
+
+.white{
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 12px ;
+    margin-left: 10px;
+}
+
+.white, .green{
+    margin-bottom: 10px;
+}
+
+.messages{
+}
+
+.full{
+    height: 100vh;
 }
