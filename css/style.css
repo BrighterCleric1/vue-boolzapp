@@ -55,3 +55,46 @@
     height: 89px;
     background-color: #9DE1FE;
 }
+
+.input-search, #search{
+    width: 100%;
+}
+
+.input-search{
+    margin-left: 30px;
+}
+
+#search{
+    border: none;
+}
+
+.chat-input-sidebar{
+    background-color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+
+.chat{
+    height: 72px;
+    border-bottom: 1px solid #DADADA;
+}
+
+.chat-img{
+    height: 90%;
+    border-radius: 50%;
+    overflow: hidden;
+    align-self: center;
+    
+}
+
+.chat-img img{
+    height: 100%;
+}
+
+
+.chats{
+    background-color: #fff;
+}

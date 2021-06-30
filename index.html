@@ -52,9 +52,28 @@
                                 <div>Ricevi notifiche di nuovi messaggi
                                     <div>Attiva notifiche desktop</div>
                                 </div>
-
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col d-flex align-items-center chat-input-sidebar">
+                                <div class="search-button">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="input-search">
+                                    <input id="search" type="text" placeholder="Cerca o inizia una nuova chat">
+                                </div>
 
                             </div>
+
+                        </div>
+                        <div class="row chats">
+                            <div v-for="(cont, index) in contacts" class="col-12 chat d-flex">
+                                <div class="chat-img">
+                                    <img src="./img/img/avatar_8.jpg" alt="">
+                                </div>
+                                <span>Michele</span>
+                            </div>
+
 
                         </div>
 
