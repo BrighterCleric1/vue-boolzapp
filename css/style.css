@@ -2,6 +2,7 @@
     width: 100%;
     background-color: #009688;
     height: 127px;
+    position: absolute;
     z-index: -1;
 }
 
@@ -9,4 +10,37 @@
     background: linear-gradient(to bottom, #D3DBDB 50%, #D3DBDB 75%, #D3DBDB 75%);
     width: 100%;
     height: 100vh;
+    position: relative;
+    z-index: -1;
 }
+
+.header{
+    background-color: #EDEDED;
+}
+
+.container{
+    z-index: 1000;
+    padding-top: 15px;
+}
+
+.header{
+    height: 60px;
+    background-color: #EDEDED;
+}
+
+.user{
+    border-right: 1px solid #DADADA;
+}
+
+.user, .user-details, .user-img img, .selected-contact{
+    height: 100%;
+}
+
+.user-img{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 90%;
+}
+
+
+
