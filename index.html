@@ -69,9 +69,9 @@
                         <div class="row chats">
                             <div v-for="(cont, index) in contacts" class="col-12 chat d-flex">
                                 <div class="chat-img">
-                                    <img src="./img/img/avatar_8.jpg" alt="">
+                                    <img :src="'./img/img/avatar' + cont.avatar +'.jpg'" alt="">
                                 </div>
-                                <span>Michele</span>
+                                <span class="contact-name">{{cont.name}}</span>
                             </div>
 
 

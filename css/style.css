@@ -82,12 +82,15 @@
     border-bottom: 1px solid #DADADA;
 }
 
+.chat:last-child{
+    border: none;
+}
+
 .chat-img{
     height: 90%;
     border-radius: 50%;
     overflow: hidden;
     align-self: center;
-    
 }
 
 .chat-img img{
@@ -97,4 +100,9 @@
 
 .chats{
     background-color: #fff;
+}
+
+
+.contact-name{
+    margin-left: 10px;
 }
