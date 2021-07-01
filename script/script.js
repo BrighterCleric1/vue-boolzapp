@@ -97,8 +97,9 @@ new Vue({
         answer: {
             date: "",
             status: "received",
-            text: "ok"
-        }
+            text: "👺"
+        },
+        inputFilter: ""
     },
     methods: {
         move: function (index) {
@@ -111,6 +112,14 @@ new Vue({
             setTimeout(() => {
                 this.contacts[indexContact].messages.push(this.answer);
             }, 1000);
+        },
+        filterChat: function (inputFilter) {
+            this.contacts.filter((this.inputFilter)=> {
+                if(this.contacts.name.startsWith(this.inputFilter)){
+                return true;
+            }
+            return false;
+        }),
         }
     }
 })
