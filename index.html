@@ -105,6 +105,13 @@
                                     <div class="msg-info d-flex justify-content-end">10/01/20210 15:30:55</div>
                                 </div>
                             </div>
+                            <div class="row" v-for="message in contacts[0].messages" :class="message.status">
+                                <div class="col-3" :class="message.status">
+                                    <div class="msg-content">{{message.text}}</div>
+
+                                </div>
+
+                            </div>
                         </div>
                         <div class="row bottom-commands align-items-center">
                             <div class="col-1 d-flex justify-content-end">

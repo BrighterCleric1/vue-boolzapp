@@ -11,7 +11,6 @@
     background: linear-gradient(to bottom, #D3DBDB 50%, #D3DBDB 75%, #D3DBDB 75%);
     width: 100%;
     position: relative;
-    z-index: -1;
 }
 
 .header{
@@ -163,4 +162,26 @@
 
 .full{
     height: 100vh;
+}
+
+.row.sent{
+    justify-content: flex-end;
+}
+
+.col-3.sent{
+    background-color: #DCF8C6;
+    padding: 10px;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.col-3.received{
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 12px ;
+    margin-left: 10px;
+}
+
+.col-3.sent, .col-3.received{
+    margin-bottom: 10px;
 }
