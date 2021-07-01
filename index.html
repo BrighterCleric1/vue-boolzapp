@@ -38,15 +38,15 @@
                         </div>
                     </div>
                     <div class="col-8 selected-contact  d-flex justify-content-between align-items-center">
-                        <div class="user-details d-flex align-items-center">
+                        <div v-if="indexContact!=null" class="user-details d-flex align-items-center">
                             <div class="user-img">
-                                <img src="./img/img/avatar_io.jpg" alt="">
+                                <img :src="'./img/img/avatar' + contacts[indexContact].avatar +'.jpg'" alt="">
                             </div>
-                            <div>Michele
-                                <div>Michele</div>
+                            <div>{{contacts[indexContact].name}}
+                                <div>ultimo accesso oggi alle</div>
                             </div>
                         </div>
-                        <div class="user-commands">
+                        <div v-if="indexContact!=null" class="user-commands">
                             <i class="fas fa-circle-notch"></i>
                             <i class="fas fa-comment-alt"></i>
                             <i class="fas fa-ellipsis-v"></i>
