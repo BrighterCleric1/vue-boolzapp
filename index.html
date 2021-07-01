@@ -80,7 +80,7 @@
 
                         </div>
                         <div class="row chats">
-                            <div v-for="(cont, index) in contacts" class="col-12 chat d-flex">
+                            <div @click="move(index)" v-for="(cont, index) in contacts" class="col-12 chat d-flex">
                                 <div class="chat-img">
                                     <img :src="'./img/img/avatar' + cont.avatar +'.jpg'" alt="">
                                 </div>
