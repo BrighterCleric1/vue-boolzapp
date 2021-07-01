@@ -88,11 +88,21 @@ new Vue({
             },
         ],
         indexContact: 1,
+        userMessage: {
+            date: "",
+            status: "sent",
+            text: ""
+        },
+        textMessage: "",
 
     },
     methods: {
         move: function (index) {
             this.indexContact = index
+        },
+        addMessage: function () {
+            this.userMessage.text = this.textMessage
+            this.textMessage = "";
         }
     }
 })
