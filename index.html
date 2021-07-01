@@ -108,6 +108,7 @@
                             <div class="row" v-for="message in contacts[indexContact].messages" :class="message.status">
                                 <div class="col-3" :class="message.status">
                                     <div class="msg-content">{{message.text}}</div>
+                                    <div class="msg-info d-flex justify-content-end">{{message.date}}</div>
 
                                 </div>
 
