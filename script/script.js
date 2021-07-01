@@ -87,7 +87,13 @@ new Vue({
                     }
                 ],
             },
-        ]
+        ],
+        indexContact: 1,
 
+    },
+    methods: {
+        move: function (index) {
+            this.indexContact = index
+        }
     }
 })
