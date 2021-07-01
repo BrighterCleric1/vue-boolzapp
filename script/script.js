@@ -101,8 +101,9 @@ new Vue({
             this.indexContact = index
         },
         addMessage: function () {
-            this.userMessage.text = this.textMessage
+            this.userMessage.text = this.textMessage;
             this.textMessage = "";
+            this.contacts.messages.push(this.userMessage);
         }
     }
 })
