@@ -113,13 +113,13 @@ new Vue({
                 this.contacts[indexContact].messages.push(this.answer);
             }, 1000);
         },
-        filterChat: function (inputFilter) {
-            this.contacts.filter((this.inputFilter)=> {
-                if(this.contacts.name.startsWith(this.inputFilter)){
-                return true;
-            }
-            return false;
-        }),
-        }
+        /* filterChat: function (inputFilter) {
+             this.contacts.filter((this.inputFilter)=> {
+                 if(this.contacts.name.startsWith(this.inputFilter)){
+                 return true;
+             }
+             return false;
+         }),
+         }*/
     }
 })
