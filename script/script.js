@@ -87,14 +87,18 @@ new Vue({
                 ],
             },
         ],
-        indexContact: 1,
+        indexContact: null,
         userMessage: {
             date: "",
             status: "sent",
             text: ""
         },
         textMessage: "",
-
+        answer: {
+            date: "",
+            status: "received",
+            text: "ok"
+        }
     },
     methods: {
         move: function (index) {
@@ -103,7 +107,10 @@ new Vue({
         addMessage: function (indexContact) {
             this.userMessage.text = this.textMessage;
             this.textMessage = "";
-            this.contacts(indexContact).messages.push(this.userMessage);
+            this.contacts[indexContact].messages.push(this.userMessage);
+            setTimeout(() => {
+                this.contacts[indexContact].messages.push(this.answer);
+            }, 1000);
         }
     }
 })
