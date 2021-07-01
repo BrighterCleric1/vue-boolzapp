@@ -100,10 +100,10 @@ new Vue({
         move: function (index) {
             this.indexContact = index
         },
-        addMessage: function () {
+        addMessage: function (indexContact) {
             this.userMessage.text = this.textMessage;
             this.textMessage = "";
-            this.contacts.messages.push(this.userMessage);
+            this.contacts(indexContact).messages.push(this.userMessage);
         }
     }
 })

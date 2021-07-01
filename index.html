@@ -122,8 +122,8 @@
                             </div>
                             <div class="col-10">
                                 <div class="new-message">
-                                    <input @keyup.enter="addMessage()" v-model="textMessage" id="message" type="text"
-                                        placeholder="Scrivi un messaggio">
+                                    <input @keyup.enter="addMessage(indexContact)" v-model="textMessage" id="message"
+                                        type="text" placeholder="Scrivi un messaggio">
                                 </div>
                             </div>
                             <div class="col-1">
