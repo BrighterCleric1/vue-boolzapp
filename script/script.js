@@ -95,16 +95,20 @@ new Vue({
         move: function (index) {
             this.indexContact = index
         },
+        getDateTime: function () {
+            const currentTimeData = dayjs();
+            return currentTimeData.format("DD/MM/YYYY HH:mm:ss");
+        },
         addMessage: function (indexContact) {
             this.contacts[indexContact].messages.push({
-                date: "",
+                date: this.getDateTime(),
                 status: "sent",
                 text: this.textMessage
             });
             this.textMessage = "";
             setTimeout(() => {
                 this.contacts[indexContact].messages.push({
-                    date: "",
+                    date: this.getDateTime(),
                     status: "received",
                     text: "👺"
                 });
