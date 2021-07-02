@@ -114,19 +114,18 @@ new Vue({
                 });
             }, 1000);
         },
-        /* filterChat: function (inputFilter) {
-             this.contacts.filter((this.inputFilter)=> {
-                 if(this.contacts.name.startsWith(this.inputFilter)){
-                 return true;
-             }
-             return false;
-         }),
-         }*/
         filter: function () {
-            this.contacts.visible = false;
-            if (this.contacts.name.startsWith(this.inputFilter)) {
-                this.contacts.visible = true;
-            }
-        }
+            this.contacts.forEach(cont => {
+                if (!cont.name.includes(this.upCase(this.inputFilter))) {
+                    cont.visible = false;
+                } else {
+                    cont.visible = true;
+                }
+
+            })
+        },
+        upCase: function (str) {
+            return str[0].toUpperCase() + str.slice(1);
+        },
     }
 })
