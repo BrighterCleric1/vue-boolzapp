@@ -123,7 +123,7 @@ new Vue({
          }*/
         filter: function () {
             this.contacts.visible = false;
-            if (this.contacts.name.startsWith(inputFilter)) {
+            if (this.contacts.name.startsWith(this.inputFilter)) {
                 this.contacts.visible = true;
             }
         }
