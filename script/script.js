@@ -88,17 +88,7 @@ new Vue({
             },
         ],
         indexContact: null,
-        userMessage: {
-            date: "",
-            status: "sent",
-            text: ""
-        },
         textMessage: "",
-        answer: {
-            date: "",
-            status: "received",
-            text: "👺"
-        },
         inputFilter: ""
     },
     methods: {
@@ -106,11 +96,18 @@ new Vue({
             this.indexContact = index
         },
         addMessage: function (indexContact) {
-            this.userMessage.text = this.textMessage;
+            this.contacts[indexContact].messages.push({
+                date: "",
+                status: "sent",
+                text: this.textMessage
+            });
             this.textMessage = "";
-            this.contacts[indexContact].messages.push(this.userMessage);
             setTimeout(() => {
-                this.contacts[indexContact].messages.push(this.answer);
+                this.contacts[indexContact].messages.push({
+                    date: "",
+                    status: "received",
+                    text: "👺"
+                });
             }, 1000);
         },
         /* filterChat: function (inputFilter) {
