@@ -116,7 +116,7 @@ new Vue({
         },
         filter: function () {
             this.contacts.forEach(cont => {
-                if (!cont.name.includes(this.upCase(this.inputFilter))) {
+                if (!cont.name.toLowerCase().includes(this.inputFilter.toLowerCase())) {
                     cont.visible = false;
                 } else {
                     cont.visible = true;
@@ -124,12 +124,12 @@ new Vue({
 
             })
         },
-        upCase: function (str) {
+        /*upCase: function (str) {
             if (!str == "") {
                 return str[0].toUpperCase() + str.slice(1);
             } else {
                 return ""
             }
-        },
+        },*/
     }
 })
