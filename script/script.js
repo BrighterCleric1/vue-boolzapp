@@ -121,5 +121,11 @@ new Vue({
              return false;
          }),
          }*/
+        filter: function () {
+            this.contacts.visible = false;
+            if (this.contacts.name.startsWith(inputFilter)) {
+                this.contacts.visible = true;
+            }
+        }
     }
 })

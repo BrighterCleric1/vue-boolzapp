@@ -73,7 +73,7 @@
                                     <i class="fas fa-search"></i>
                                 </div>
                                 <div class="input-search">
-                                    <input v-model="inputFilter" id="search" type="text"
+                                    <input @change="filter()" v-model="inputFilter" id="search" type="text"
                                         placeholder="Cerca o inizia una nuova chat">
                                 </div>
 
@@ -81,7 +81,8 @@
 
                         </div>
                         <div class="row chats">
-                            <div @click="move(index)" v-for="(cont, index) in contacts" class="col-12 chat d-flex">
+                            <div v-if="cont.visible==='true'" @click="move(index)" v-for="(cont, index) in contacts"
+                                class="col-12 chat d-flex">
                                 <div class="chat-img">
                                     <img :src="'./img/img/avatar' + cont.avatar +'.jpg'" alt="">
                                 </div>
