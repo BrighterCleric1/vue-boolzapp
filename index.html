@@ -109,10 +109,13 @@
                                 </div>
                             </div> -->
                             <div class="row" v-for="message in contacts[indexContact].messages" :class="message.status">
-                                <div class="col-3" :class="message.status">
+                                <div @click="deleteMessShow(message)" class="col-3" :class="message.status">
                                     <div class="msg-content">{{message.text}}</div>
                                     <div class="msg-info d-flex justify-content-end">{{message.date}}</div>
-
+                                </div>
+                                <div @click="deleteMessToggle(message)" v-if="message.flagDelete"
+                                    class="modale d-flex align-items-center">
+                                    <div @click="delMess(message, indexContact)" class="delete">Delete message</div>
                                 </div>
 
                             </div>

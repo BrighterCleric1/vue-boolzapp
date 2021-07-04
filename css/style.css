@@ -185,3 +185,15 @@
 .col-3.sent, .col-3.received{
     margin-bottom: 10px;
 }
+
+.modale{
+    height: 100px;
+    width: 200px;
+    background-color: #9DE1FE;
+    position: relative;
+    right: 150px;
+    top:30px ;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+}
+
